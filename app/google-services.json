@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "82263355304",
+    "project_id": "hackfest-fb18a",
+    "storage_bucket": "hackfest-fb18a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82263355304:android:25f0d4d2d55dac9c9bf79d",
+        "android_client_info": {
+          "package_name": "com.example.hackfest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "82263355304-eead82g6a6adngbrd98sndmogjscf3an.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVNsZgGpgfdPhAxT9YeaxjwGlio_IWygE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "82263355304-eead82g6a6adngbrd98sndmogjscf3an.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
