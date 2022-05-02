@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
                     sleep(3000);
                 }catch (Exception e){ e.printStackTrace();}
                 finally {
-                    startActivity(new Intent(MainActivity.this,AskActivity.class));
+                    startActivity(new Intent(MainActivity.this,MainActivity2.class));
                     finish();
                 }
             }

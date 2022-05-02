@@ -7,19 +7,42 @@
     android:orientation="vertical"
     tools:context=".MainActivity2">
 
-    <TextView
-        android:id="@+id/tv_welcome"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:fontFamily="@font/baloo_chettan"
-        android:paddingStart="20sp"
-        android:textAlignment="viewStart"
-        android:textColor="@color/colorPrimaryVariant"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:layout_marginBottom="30dp"/>
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo_chettan"
+            android:paddingStart="20sp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#DD2C00"
+            android:elevation="6dp"
+            app:iconTint="@color/white"
+            app:icon="@drawable/ic_baseline_login_24"
+            android:id="@+id/fab_logout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animation_view"
         android:layout_width="match_parent"
@@ -40,6 +63,7 @@
         android:textStyle="bold"
         android:fontFamily="@font/baloo_chettan"
         android:textSize="25sp"
+        android:id="@+id/tv_tv1"
         android:textColor="@color/colorPrimary"
         android:text="@string/what_would_you_nlike_to_do"
         android:paddingStart="30dp"/>
@@ -50,24 +74,39 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/roboto"
+        android:elevation="10dp"
         android:id="@+id/btn_Prev"
         android:textColor="@color/colorPrimary"
         android:textAllCaps="false"
         android:textSize="16sp"
         android:padding="15dp"
-        android:text="View Earlier Analitics"/>
+        android:text="View Earlier Analytics"/>
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/filled_button"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/roboto"
         android:textColor="@color/white"
+        android:elevation="10dp"
         android:textSize="16sp"
         android:textAllCaps="false"
         android:text="Fill Survey"
         android:id="@+id/btn_Survey"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/unfilled_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto"
+        android:elevation="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:text="View Profile"
+        android:id="@+id/btn_profile"
+        android:textAllCaps="false"/>
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>
