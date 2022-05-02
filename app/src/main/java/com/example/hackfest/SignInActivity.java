@@ -36,6 +36,15 @@ public class SignInActivity extends AppCompatActivity {
         ProgressDialog progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Signing In");
 
+        NewUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(SignInActivity.this,SignUpActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
         SignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,7 +60,7 @@ public class SignInActivity extends AppCompatActivity {
                     progressDialog.dismiss();
                     return;
                 } else {
-                    mAuth.signInWithEmailAndPassword(s1.trim(), s2.trim()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    mAuth.signInWithEmailAndPassword(s1.trim(),s2.trim()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
@@ -64,13 +73,7 @@ public class SignInActivity extends AppCompatActivity {
                             }
                         }
                     });
-                    NewUser.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            startActivity(new Intent(SignInActivity.this,SignUpActivity.class));
-                            finishAffinity();
-                        }
-                    });
+
                 }
             }
         });

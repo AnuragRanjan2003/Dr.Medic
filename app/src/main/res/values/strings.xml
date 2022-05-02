@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">HackFest</string>
     <string name="project_name">Mind Medic</string>
+    <string name="what_would_you_nlike_to_do">what would you\nlike to do</string>
 </resources>

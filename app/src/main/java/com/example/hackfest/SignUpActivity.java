@@ -76,13 +76,14 @@ public class SignUpActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()){
-                                User user=new User(s2.trim(),s4.trim(),s5.trim());
-                                database.getReference("users").child(task.getResult().getUser().getUid()).setValue(user);
+                                User user=new User(s2.trim(),s4.trim(),s5.toUpperCase().trim());
+                                database.getReference("users").child(task.getResult().getUser().getUid().toString()).setValue(user);
                                 progressDialog.dismiss();
                                 startActivity(new Intent(SignUpActivity.this,SignInActivity.class));
                                 Toast.makeText(SignUpActivity.this, "Account Created.Please Sign In", Toast.LENGTH_SHORT).show();
                                 finishAffinity();
                             }else{
+                                progressDialog.dismiss();
                                 Toast.makeText(SignUpActivity.this, task.getException().getMessage().toString(), Toast.LENGTH_SHORT).show();
                             }
                         }
