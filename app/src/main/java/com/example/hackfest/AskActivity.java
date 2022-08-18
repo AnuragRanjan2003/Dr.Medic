@@ -14,7 +14,7 @@ public class AskActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ask);
-        getSupportActionBar().hide();
+
         Button SignIn;
         AppCompatButton SignUp;
         SignIn=findViewById(R.id.btn_signIn1);

@@ -4,14 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidProjects/HackFest/app/src/main/res/drawable/filled_button.xml" value="0.17" />
+        <entry key="..\:/AndroidProjects/HackFest/app/src/main/res/drawable/rec_bg.xml" value="0.182" />
         <entry key="..\:/AndroidProjects/HackFest/app/src/main/res/drawable/unfilled_button.xml" value="0.17" />
         <entry key="..\:/AndroidProjects/HackFest/app/src/main/res/layout/activity_ask.xml" value="0.25677083333333334" />
         <entry key="..\:/AndroidProjects/HackFest/app/src/main/res/layout/activity_main.xml" value="0.25677083333333334" />
         <entry key="..\:/AndroidProjects/HackFest/app/src/main/res/layout/activity_main2.xml" value="0.25677083333333334" />
         <entry key="..\:/AndroidProjects/HackFest/app/src/main/res/layout/activity_previous.xml" value="0.25677083333333334" />
+        <entry key="..\:/AndroidProjects/HackFest/app/src/main/res/layout/activity_profile.xml" value="0.25677083333333334" />
         <entry key="..\:/AndroidProjects/HackFest/app/src/main/res/layout/activity_sign_in.xml" value="0.25677083333333334" />
         <entry key="..\:/AndroidProjects/HackFest/app/src/main/res/layout/activity_sign_up.xml" value="0.25677083333333334" />
         <entry key="..\:/AndroidProjects/HackFest/app/src/main/res/layout/activity_survey.xml" value="0.25677083333333334" />
+        <entry key="..\:/AndroidProjects/HackFest/app/src/main/res/layout/single_row.xml" value="0.25677083333333334" />
       </map>
     </option>
   </component>

@@ -8,5 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="colorPrimaryVariant">#5568fe</color>
     <color name="colorPrimary">#1825FE</color>
+    <color name="statGood">#33DF3B</color>
+    <color name="statBad">#FD3B3B</color>
+    <color name="statNorm">#E6D32D</color>
     <color name="white">#FFFFFFFF</color>
 </resources>

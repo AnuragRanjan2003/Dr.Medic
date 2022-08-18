@@ -2,4 +2,10 @@
     <string name="app_name">HackFest</string>
     <string name="project_name">Mind Medic</string>
     <string name="what_would_you_nlike_to_do">what would you\nlike to do</string>
+    <string name="Profile_Image">ProfileImages/</string>
+    <string name="def_man">https://firebasestorage.googleapis.com/v0/b/hackfest-fb18a.appspot.com/o/ProfileImages%2Fman_default.png?alt=media&amp;token=2e1d0af5-af24-4f34-b641-9e8ac3d8f962</string>
+    <string name="def_fem">https://firebasestorage.googleapis.com/v0/b/hackfest-fb18a.appspot.com/o/ProfileImages%2Ffemale_default.png?alt=media&amp;token=b75a9de1-5583-4eb6-892b-4446e37118d6</string>
+    <string name="what_type_of_symptoms_are_you_facing">What type of symptoms are you facing</string>
+    <string name="symptom">symptom</string>
+    <string name="few_more_questions">Few more questions</string>
 </resources>

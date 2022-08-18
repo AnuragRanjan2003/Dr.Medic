@@ -10,13 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HackFest">
         <activity
-            android:name=".ProfileActivity"
-            android:exported="false" />
-        <activity
             android:name=".PreviousActivity"
             android:exported="false" />
         <activity
-            android:name=".SurveyActivity"
+            android:name=".ProfileActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity2"

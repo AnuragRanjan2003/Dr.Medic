@@ -1,14 +1,24 @@
 package Models;
 
 public class User {
-    String UserName,Age,Gender;
+    String UserName, Age, Gender, profileUrl;
 
     public User() {
     }
-    public User(String UserName,String Age,String Gender){
-        this.UserName=UserName;
-        this.Age=Age;
-        this.Gender=Gender;
+
+    public User(String UserName, String Age, String Gender, String profileUrl) {
+        this.UserName = UserName;
+        this.Age = Age;
+        this.Gender = Gender;
+        this.profileUrl = profileUrl;
+    }
+
+    public String getProfileUrl() {
+        return profileUrl;
+    }
+
+    public void setProfileUrl(String profileUrl) {
+        this.profileUrl = profileUrl;
     }
 
     public String getUserName() {

@@ -24,13 +24,13 @@ public class SignUpActivity extends AppCompatActivity {
     FirebaseDatabase database;
     EditText Email,Password,UserName,Age,Gender;
     AppCompatButton SignUp;
+    String defUrl;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
-        getSupportActionBar().hide();
         database=FirebaseDatabase.getInstance();
         mAuth=FirebaseAuth.getInstance();
         Email=findViewById(R.id.et_SignUpEmail);
@@ -76,7 +76,13 @@ public class SignUpActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()){
-                                User user=new User(s2.trim(),s4.trim(),s5.toUpperCase().trim());
+                                if(s5.equals("Male")){
+                                    defUrl=getString(R.string.def_man);
+                                }
+                                else if(s5.equals("Female")){
+                                    defUrl=getString(R.string.def_fem);
+                                }
+                                User user=new User(s2.trim(),s4.trim(),s5.toUpperCase().trim(),defUrl);
                                 database.getReference("users").child(task.getResult().getUser().getUid().toString()).setValue(user);
                                 progressDialog.dismiss();
                                 startActivity(new Intent(SignUpActivity.this,SignInActivity.class));
