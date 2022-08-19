@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/vm2_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/vm2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="text"
+            android:textSize="20sp"
+            android:maxWidth="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vm2_title" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vm2_chip_group"
+            app:layout_constraintBottom_toBottomOf="parent"
+            style="@style/Widget.Material3.ChipGroup"
+            android:layout_marginEnd="10dp"
+            app:checkedChip="@id/vm2_mild"
+            app:chipSpacingHorizontal="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/vm2_none"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipEndPadding="10dp"
+                    android:checkable="true"
+                    app:chipStartPadding="10dp"
+                    app:chipBackgroundColor="@color/chipColour"
+                    android:theme="@style/Widget.MaterialComponents.Chip.Filter"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:text="none"/>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/vm2_mild"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipEndPadding="10dp"
+                    app:chipStartPadding="10dp"
+                    android:checkable="true"
+                    app:chipBackgroundColor="@color/chipColour"
+                    android:theme="@style/Widget.MaterialComponents.Chip.Filter"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:text="mild"/>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/vm2_high"
+                    android:layout_width="wrap_content"
+                    app:chipBackgroundColor="@color/chipColour"
+                    app:chipEndPadding="10dp"
+                    app:chipStartPadding="10dp"
+                    android:checkable="true"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Widget.MaterialComponents.Chip.Filter"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:text="high"/>
+        </com.google.android.material.chip.ChipGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
