@@ -7,6 +7,7 @@ import androidx.appcompat.widget.AppCompatButton;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -97,5 +98,6 @@ public class SignUpActivity extends AppCompatActivity {
                 }
             }
         });
+
     }
 }

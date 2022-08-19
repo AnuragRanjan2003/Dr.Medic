@@ -11,5 +11,6 @@
     <color name="statGood">#33DF3B</color>
     <color name="statBad">#FD3B3B</color>
     <color name="statNorm">#E6D32D</color>
+    <color name="chipColour">#C8B6B5B5</color>
     <color name="white">#FFFFFFFF</color>
 </resources>

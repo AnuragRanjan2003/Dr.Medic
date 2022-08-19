@@ -30,17 +30,18 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fab_logout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
             android:backgroundTint="#DD2C00"
             android:elevation="6dp"
-            app:iconTint="@color/white"
             app:icon="@drawable/ic_baseline_login_24"
-            android:id="@+id/fab_logout"
+            app:iconTint="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.airbnb.lottie.LottieAnimationView
@@ -80,7 +81,7 @@
         android:textAllCaps="false"
         android:textSize="16sp"
         android:padding="15dp"
-        android:text="View Earlier Analytics"/>
+        android:text="View Diagonosis"/>
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="200dp"
         android:layout_height="wrap_content"

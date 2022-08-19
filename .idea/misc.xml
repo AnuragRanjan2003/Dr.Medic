@@ -14,7 +14,11 @@
         <entry key="..\:/AndroidProjects/HackFest/app/src/main/res/layout/activity_sign_in.xml" value="0.25677083333333334" />
         <entry key="..\:/AndroidProjects/HackFest/app/src/main/res/layout/activity_sign_up.xml" value="0.25677083333333334" />
         <entry key="..\:/AndroidProjects/HackFest/app/src/main/res/layout/activity_survey.xml" value="0.25677083333333334" />
+        <entry key="..\:/AndroidProjects/HackFest/app/src/main/res/layout/form_vm1.xml" value="0.264" />
+        <entry key="..\:/AndroidProjects/HackFest/app/src/main/res/layout/form_vm2.xml" value="0.2557291666666667" />
+        <entry key="..\:/AndroidProjects/HackFest/app/src/main/res/layout/item_vm.xml" value="0.264" />
         <entry key="..\:/AndroidProjects/HackFest/app/src/main/res/layout/single_row.xml" value="0.25677083333333334" />
+        <entry key="..\:/AndroidProjects/HackFest/app/src/main/res/layout/symp_item_vm.xml" value="0.2557291666666667" />
       </map>
     </option>
   </component>

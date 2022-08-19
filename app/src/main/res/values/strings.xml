@@ -8,4 +8,12 @@
     <string name="what_type_of_symptoms_are_you_facing">What type of symptoms are you facing</string>
     <string name="symptom">symptom</string>
     <string name="few_more_questions">Few more questions</string>
+    <string name="item1">Item 1</string>
+    <string name="No">No</string>
+    <string-array name="symptom_array">
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+        <item>Item 4</item>
+    </string-array>
 </resources>
