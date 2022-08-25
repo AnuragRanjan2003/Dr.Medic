@@ -1,4 +1,4 @@
 package Models
 
-data class Form(val Title:String,val text:String,val viewType:Int) {
+data class Form(val Title:String, var text:String, val viewType:Int) {
 }
